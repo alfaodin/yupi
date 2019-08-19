@@ -1,17 +1,62 @@
+:root {
+  --bg-color1: #565694;
+  --bg-color2: #1d7698;
+  --bg-color3: #297b44;
+  --bg-color4: #c2683c;
+  --bg-color5: #eb78ce;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
 .container {
   height: 100vh;
   display: flex;
-  flex-direction: column;
-  background-color: rebeccapurple;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-color1);
 }
 
+.mobile-frame {
+  width: 400px;
+  height: 712px;
+  background-color: #1d7698;
+  display: grid;
+  align-items: stretch;
+  grid-template-columns: 1fr;
+  grid-template-rows: 40% auto 10%;
+  grid-template-areas:
+    "header"
+    "body"
+    "footer";
+}
+
+.header-container {
+  grid-area: header;
+  overflow: hidden;
+}
+.header-svg {
+  transform: translateY(-50%);
+}
+
+.body-container {
+  grid-area: body;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .footer-container {
-	height: 20vh;
-	align-self: flex-end;
-  background-color: aquamarine;
+  grid-area: footer;
+  overflow: hidden;
 }
 
+.test {
+  width: 100%;
+}
 .test:hover path {
   fill: #c2683c !important;
 }
