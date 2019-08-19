@@ -1,0 +1,17 @@
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: rebeccapurple;
+}
+
+
+.footer-container {
+	height: 20vh;
+	align-self: flex-end;
+  background-color: aquamarine;
+}
+
+.test:hover path {
+  fill: #c2683c !important;
+}
